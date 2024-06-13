@@ -99,6 +99,35 @@ public class BracketView {
         return hbox;
     }
 
+    public HBox createSchedule(Player player1) {
+        String playerName1 = player1.getNamePlayer();
+        String playerRank1 = String.valueOf(player1.getRank());
+
+        Label labelPlayer1 = new Label(playerName1 + " [" + playerRank1 + "]");
+        TextField pointsPlayer1TextField = new TextField("0");
+        Button disqualifyButton1 = new Button("DQ");
+        disqualifyButton1.setId("1");
+        disqualifyButton1.getId();
+
+        pointsPlayer1TextField.setPrefSize(30, 25);
+
+        disqualifyButton1.setOnAction(e -> disqualifyPlayer(pointsPlayer1TextField));
+
+        scores.add(pointsPlayer1TextField);
+        dqButtons.add(disqualifyButton1);
+
+        HBox hbox = new HBox(10);
+        Text text = new Text(" - ");
+        hbox.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, null, null)));
+        hbox.setPadding(new Insets(10));
+        hbox.getChildren().addAll(
+                pointsPlayer1TextField,
+                disqualifyButton1,
+                labelPlayer1,
+                text);
+        return hbox;
+    }
+
     private void disqualifyPlayer(TextField pointsTextField) {
         pointsTextField.setText("-1");
         pointsTextField.setDisable(true);

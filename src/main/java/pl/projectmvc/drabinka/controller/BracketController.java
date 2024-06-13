@@ -69,7 +69,9 @@ public class BracketController {
                         winners.add(players.get(i + 1));
                     }
                 } else {
-                    winners.add(players.get(i));
+                    if (points.get(i) != -1) {
+                        winners.add(players.get(i));
+                    }
                 }
             }
             System.out.println("Winners: " + winners);
@@ -91,6 +93,9 @@ public class BracketController {
             for (int j = 0; j < playersCount; j += 2) {
                 if (j + 1 < playersCount) {
                     roundColumnVBox.getChildren().add(view.createSchedule(players.get(j), players.get(j + 1)));
+                }
+                else {
+                    roundColumnVBox.getChildren().add(view.createSchedule(players.get(j)));
                 }
             }
 
