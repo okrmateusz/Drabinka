@@ -1,0 +1,13 @@
+test,test,Sędzia
+testeasd,123,Sędzia
+qwer,qwer,Sędzia
+123,123,Sędzia
+123,123,Organizator
+123,123,Sędzia
+12,12,Organizator
+,,Sędzia
+1,1,Sędzia
+1,1,Organizator
+123,123,Organizator
+s,s,Sędzia
+sigma,sigma,Organizator
