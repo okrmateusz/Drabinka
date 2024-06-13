@@ -9,8 +9,6 @@ import javafx.scene.text.Text;
 
 public class MenuView {
     private final HBox hBoxListBracket;
-    private final VBox vBoxListView;
-    private final VBox vBoxButtons;
 
     private final Button addBracketButton;
     private final Button loginButton;
@@ -19,16 +17,13 @@ public class MenuView {
     private final Text nameText;
     private final Text roleText;
 
-    private final ListView<String> bracketListView;
-
-    private final HBox infoUserLabel;
 
     public MenuView() {
         hBoxListBracket = new HBox(10);
         hBoxListBracket.setPadding(new Insets(10));
 
-        vBoxListView = new VBox(10);
-        vBoxButtons = new VBox(10);
+        VBox vBoxListView = new VBox(10);
+        VBox vBoxButtons = new VBox(10);
 
         addBracketButton = new Button("Dodaj");
         addBracketButton.setDisable(true);
@@ -41,9 +36,7 @@ public class MenuView {
         nameText = new Text("Użytkownik niezalogowany: <nazwa>");
         roleText = new Text(", <rola>");
 
-        bracketListView = new ListView<>();
-
-        infoUserLabel = new HBox();
+        HBox infoUserLabel = new HBox();
 
         hBoxListBracket.getChildren().addAll(vBoxListView, vBoxButtons);
         vBoxButtons.getChildren().addAll(infoUserLabel, addBracketButton, bracketButton, loginButton);

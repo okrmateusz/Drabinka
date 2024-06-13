@@ -1,7 +1,6 @@
 package pl.projectmvc.drabinka.controller;
 
 import javafx.scene.Scene;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import pl.projectmvc.drabinka.view.AddPlayerView;
 import pl.projectmvc.drabinka.view.BracketView;

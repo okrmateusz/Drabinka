@@ -12,9 +12,6 @@ public class LoginView {
 
     private final VBox root;
 
-    private final VBox textFieldsVbox;
-    private final HBox buttonsHbox;
-
     private final Label infoAlertLabel;
 
     private final TextField loginTextField;
@@ -28,8 +25,8 @@ public class LoginView {
 
     public LoginView() {
         root = new VBox(10);
-        textFieldsVbox = new VBox(10);
-        buttonsHbox = new HBox(10);
+        VBox textFieldsVbox = new VBox(10);
+        HBox buttonsHbox = new HBox(10);
         HBox navigationHbox = new HBox();
 
         infoAlertLabel = new Label("Wpisz login i hasło");
