@@ -41,11 +41,10 @@ public class Main extends Application {
         stage.setTitle("Menu");
         stage.show();
 
-        // Create the controller and pass the necessary objects
-        MenuViewController menuViewController = new MenuViewController(stage, sceneController, menuView);
-        AddPlayerController addPlayerController = new AddPlayerController(stage, sceneController, addPlayerView);
-        BracketController bracketController = new BracketController(stage, sceneController, bracketView);
-        LoginController loginController = new LoginController(stage, sceneController, loginView);
+        new MenuViewController(stage, sceneController, menuView);
+        new AddPlayerController(stage, sceneController, addPlayerView);
+        new BracketController(stage, sceneController, bracketView);
+        new LoginController(stage, sceneController, loginView);
 
     }
 }
