@@ -1,6 +1,5 @@
 package pl.projectmvc.drabinka.view;
 
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
@@ -9,10 +8,6 @@ import pl.projectmvc.drabinka.model.Player;
 
 public class AddPlayerView {
     private final VBox root;
-    private final HBox hBoxContainer;
-    private final VBox vBoxContainerElements;
-    private final VBox vBoxTableView;
-    private final HBox hBoxButtons;
 
     private final TextField textFieldName;
     private final TextField textFieldRank;
@@ -27,10 +22,10 @@ public class AddPlayerView {
     public AddPlayerView(){
         root = new VBox(10);
 
-        hBoxContainer = new HBox(10);
-        vBoxTableView = new VBox(10);
-        vBoxContainerElements = new VBox(10);
-        hBoxButtons = new HBox(10);
+        HBox hBoxContainer = new HBox(10);
+        VBox vBoxTableView = new VBox(10);
+        VBox vBoxContainerElements = new VBox(10);
+        HBox hBoxButtons = new HBox(10);
 
         textFieldName = new TextField();
         textFieldName.setPromptText("Nazwa");

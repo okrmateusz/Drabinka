@@ -37,14 +37,8 @@ public class SceneController {
         return new Scene(new VBox(menuView.getRoot()), 600, 400);
     }
 
-    public HBox getLabelFirstView(){
-        return menuView.getInfoUserLabel();
-    }
-
     public MenuView getMenuView() {
         return menuView;
     }
-    public BracketView getBracketView(){
-        return bracketView;
-    }
+
 }

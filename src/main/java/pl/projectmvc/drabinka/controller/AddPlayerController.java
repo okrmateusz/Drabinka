@@ -6,7 +6,6 @@ import javafx.event.ActionEvent;
 import javafx.stage.Stage;
 import pl.projectmvc.drabinka.model.Player;
 import pl.projectmvc.drabinka.view.AddPlayerView;
-import pl.projectmvc.drabinka.view.BracketView;
 
 public class AddPlayerController {
     private final Stage stage;

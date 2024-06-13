@@ -2,7 +2,6 @@ package pl.projectmvc.drabinka.controller;
 
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -13,10 +12,8 @@ import pl.projectmvc.drabinka.model.User;
 import pl.projectmvc.drabinka.model.UserInfo;
 import pl.projectmvc.drabinka.view.BracketView;
 
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ResourceBundle;
 
 public class BracketController {
     Stage stage;
@@ -99,7 +96,7 @@ public class BracketController {
 
             currentRound++;
         } else if (playersCount == 1) {
-            Label winnerLabel = new Label("Winner: " + players.get(0).getNamePlayer());
+            Label winnerLabel = new Label("Winner: " + players.getFirst().getNamePlayer());
             winnerLabel.setStyle("-fx-font-size: 16px; -fx-alignment: center;");
             view.getRoundsHbox().getChildren().add(winnerLabel);
         }

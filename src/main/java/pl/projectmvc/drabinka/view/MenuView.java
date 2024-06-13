@@ -50,17 +50,6 @@ public class MenuView {
         infoUserLabel.getChildren().addAll(nameText, roleText);
     }
 
-    public HBox getHBoxListBracket() {
-        return hBoxListBracket;
-    }
-
-    public VBox getVBoxListView() {
-        return vBoxListView;
-    }
-
-    public VBox getVBoxButtons() {
-        return vBoxButtons;
-    }
 
     public Button getAddBracketButton() {
         return addBracketButton;
@@ -72,14 +61,6 @@ public class MenuView {
 
     public Button getBracketButton() {
         return bracketButton;
-    }
-
-    public ListView<String> getBracketListView() {
-        return bracketListView;
-    }
-
-    public HBox getInfoUserLabel() {
-        return infoUserLabel;
     }
 
     public void setUserInfoLabel(String name, String role) {

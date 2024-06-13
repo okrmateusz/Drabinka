@@ -51,11 +51,7 @@ public class LoginController {
 
             UserInfo.setLoggedInUser(loggedInUser);
 
-            if ("Sędzia".equals(role)) {
-                sceneController.getMenuView().setAddBracketButtonDisabled(true);
-            } else {
-                sceneController.getMenuView().setAddBracketButtonDisabled(false);
-            }
+            sceneController.getMenuView().setAddBracketButtonDisabled("Sędzia".equals(role));
         } else {
             System.out.println("Invalid credentials!");
             view.getInfoAlertLabel().setText("Invalid credentials!");

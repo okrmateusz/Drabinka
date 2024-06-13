@@ -1,7 +1,6 @@
 package pl.projectmvc.drabinka.view;
 
 import javafx.geometry.Insets;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -54,9 +53,6 @@ public class BracketView {
         return roundsHbox;
     }
 
-    public HBox getButtonsHbox() {
-        return buttonsHbox;
-    }
 
     public Button getButtonBack(){
         return buttonBack;
