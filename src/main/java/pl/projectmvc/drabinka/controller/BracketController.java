@@ -65,8 +65,10 @@ public class BracketController {
                         winners.add(new Player("BRAK", -1));
                     } else if (points.get(i) > points.get(i + 1)) {
                         winners.add(players.get(i));
+                        players.get(i).rankUp(currentRound);
                     } else {
                         winners.add(players.get(i + 1));
+                        players.get(i + 1).rankUp(currentRound);
                     }
                 } else {
                     if (points.get(i) != -1) {

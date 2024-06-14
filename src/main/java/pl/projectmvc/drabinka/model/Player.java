@@ -20,4 +20,7 @@ public class Player {
     public int getRank() {
         return rank;
     }
+    public void rankUp(int curentRound){
+        rank += curentRound;
+    }
 }
