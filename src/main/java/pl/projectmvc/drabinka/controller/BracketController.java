@@ -103,7 +103,7 @@ public class BracketController {
 
             currentRound++;
         } else if (playersCount == 1) {
-            Label winnerLabel = new Label("Winner: " + players.getFirst().getNamePlayer());
+            Label winnerLabel = new Label("Zwycięzca: " + players.getFirst().getNamePlayer());
             winnerLabel.setStyle("-fx-font-size: 16px; -fx-alignment: center;");
             view.getRoundsHbox().getChildren().add(winnerLabel);
         }

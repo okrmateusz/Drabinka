@@ -67,7 +67,7 @@ public class BracketView {
         Label labelPlayer1 = new Label(playerName1 + " [" + playerRank1 + "]");
         Label labelPlayer2 = new Label("[" + playerRank2 + "] " + playerName2);
         TextField pointsPlayer1TextField = new TextField("0");
-        TextField pointsPlayer2TextField = new TextField("1");
+        TextField pointsPlayer2TextField = new TextField("0");
         Button disqualifyButton1 = new Button("DQ");
         disqualifyButton1.setId("1");
         disqualifyButton1.getId();
